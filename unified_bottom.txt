@@ -1,0 +1,23 @@
+<footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h3>BLM FEB UNAIR</h3>
+                <p>Badan Legislatif Mahasiswa<br>Fakultas Ekonomi dan Bisnis<br>Universitas Airlangga</p>
+            </div>
+            <div class="footer__section">
+                <h3>Tautan Cepat</h3>
+                <a href="kotakaspirasi.html">Kotak Aspirasi</a>
+                <a href="faq.html">FAQ</a>
+                <a href="bankaspirasi.html">Bank Aspirasi</a>
+                <a href="jdih-konstitusi.html">JDIH</a>
+            </div>
+            <div class="footer__section">
+                <h3>Hubungi Kami</h3>
+                <p>Email: admin@blmfebunair.com</p>
+                <a href="#" style="color:var(--accent-gold); font-weight: 500;"><i class="bx bxl-instagram"></i> Instagram BLM FEB</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 BLM FEB UNAIR. All rights reserved.</p>
+        </div>
+    </footer>

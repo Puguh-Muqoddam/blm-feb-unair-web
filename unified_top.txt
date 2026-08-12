@@ -1,0 +1,61 @@
+<!-- Mobile Header Toggle -->
+    <div class="header4" id="header-toggle">
+        <i class="bx bx-menu header__toggle"></i>
+    </div>
+
+    <!-- Mobile Sidebar Nav -->
+    <div class="nav2" id="navbar">
+        <a href="index.html" class="nav2__logo">
+            <img src="img/blm_logo.png" alt="Logo BLM">
+        </a>
+        <div class="nav2__list">
+            <a href="index.html" class="nav2__link active"><i class="bx bx-home nav2__icon"></i> Home</a>
+            <a href="kotakaspirasi.html" class="nav2__link"><i class="bx bx-user nav2__icon"></i> Kotak Aspirasi</a>
+            <a href="faq.html" class="nav2__link"><i class="bx bx-message-rounded nav2__icon"></i> FAQ</a>
+            <a href="bankaspirasi.html" class="nav2__link"><i class="bx bx-file nav2__icon"></i> Bank Aspirasi</a>
+            <a href="selayangpandang.html" class="nav2__link"><i class="bx bx-user nav2__icon"></i> Selayang Pandang</a>
+            
+            <div class="nav2__link" style="cursor: default;">
+                <i class="bx bx-folder nav2__icon"></i> JDIH
+            </div>
+            <div class="nav2__dropdown-content">
+                <a href="jdih-konstitusi.html">Konstitusi</a>
+                <a href="jdih-peraturan-mahasiswa.html">Peraturan Mahasiswa</a>
+                <a href="jdih-peraturan-senat.html">Peraturan Senat Mahasiswa</a>
+                <a href="jdih-sop.html">SOP</a>
+                <a href="jdih-keputusan.html">Keputusan</a>
+                <a href="jdih-rancangan.html">Rancangan Peraturan</a>
+            </div>
+
+            <a href="peminjamanruangan.html" class="nav2__link"><i class="bx bx-time nav2__icon"></i> Peminjaman Ruangan</a>
+            <a href="login.html" class="nav2__link"><i class="bx bx-envelope nav2__icon"></i> Ajukan Surat</a>
+        </div>
+    </div>
+    
+    <!-- Desktop Nav -->
+    <nav>
+        <div class="nav-logo">
+            <img src="img/blm_logo.png" alt="Logo 1">
+            <img src="img/parliament_logo.png" alt="Logo 2">
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="kotakaspirasi.html">Kotak Aspirasi</a></li>
+            <li class="link"><a href="faq.html">FAQ</a></li>
+            <li class="link"><a href="bankaspirasi.html">Bank Aspirasi</a></li>
+            <li class="link"><a href="selayangpandang.html">Selayang Pandang</a></li>
+            <li class="dropdown">
+                <span class="dropbtn">JDIH <i class="bx bx-chevron-down"></i></span>
+                <div class="dropdown-content">
+                    <a href="jdih-konstitusi.html">Konstitusi</a>
+                    <a href="jdih-peraturan-mahasiswa.html">Peraturan Mahasiswa</a>
+                    <a href="jdih-peraturan-senat.html">Peraturan Senat Mahasiswa</a>
+                    <a href="jdih-sop.html">SOP</a>
+                    <a href="jdih-keputusan.html">Keputusan</a>
+                    <a href="jdih-rancangan.html">Rancangan Peraturan</a>
+                </div>
+            </li>
+            <li class="link"><a href="peminjamanruangan.html">Peminjaman Ruangan</a></li>
+            <li><a href="login.html" class="btn">Ajukan Surat</a></li>
+        </ul>
+    </nav>

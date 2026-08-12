@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLM FEB UNAIR</title>
+    <!-- CDNs -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+    <link rel="stylesheet" href="stylelayout.css">
+    <link rel="icon" href="img/blm_logo.png">
+    
+    <style>
+      /* Homepage Specific Styles */
+      .hero-section {
+        min-height: 85vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 4rem 2rem;
+        background: linear-gradient(135deg, var(--bg-light) 0%, #e2e8f0 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-section::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: -10%;
+        width: 400px;
+        height: 400px;
+        background: rgba(207, 154, 62, 0.15); /* Gold accent */
+        filter: blur(100px);
+        border-radius: 50%;
+        z-index: 0;
+      }
+
+      .hero-section::after {
+        content: '';
+        position: absolute;
+        bottom: -10%;
+        right: -10%;
+        width: 500px;
+        height: 500px;
+        background: rgba(27, 42, 58, 0.1); /* Navy accent */
+        filter: blur(120px);
+        border-radius: 50%;
+        z-index: 0;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 1000px;
+      }
+
+      .hero-content h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: var(--primary-navy);
+        margin-bottom: 0.5rem;
+        letter-spacing: -1px;
+      }
+
+      .hero-content h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--accent-gold);
+        margin-bottom: 2rem;
+      }
+
+      .hero-content p {
+        font-size: 1.25rem;
+        color: var(--text-muted);
+        max-width: 800px;
+        margin: 0 auto 3rem;
+        line-height: 1.8;
+      }
+
+      .hero-buttons {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--primary-navy);
+        border: 2px solid var(--primary-navy);
+      }
+
+      .btn-outline:hover {
+        background: var(--primary-navy);
+        color: var(--bg-white);
+        border-color: var(--primary-navy);
+      }
+
+      .welcome-section {
+        padding: 6rem 2rem;
+        background: var(--bg-white);
+      }
+
+      .welcome-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .welcome-container h3 {
+        font-size: 2.25rem;
+        color: var(--primary-navy);
+        margin-bottom: 2.5rem;
+        position: relative;
+        display: inline-block;
+      }
+
+      .welcome-container h3::after {
+        content: '';
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, var(--accent-gold), var(--accent-yellow));
+        border-radius: 2px;
+      }
+
+      .welcome-container p {
+        font-size: 1.15rem;
+        color: var(--text-dark);
+        line-height: 2;
+        margin-bottom: 3.5rem;
+        text-align: justify;
+      }
+
+      .tagline {
+        font-family: var(--font-heading);
+        font-size: 1.85rem;
+        font-weight: 700;
+        color: var(--accent-gold);
+        font-style: italic;
+        padding: 2.5rem;
+        background: var(--bg-light);
+        border-radius: var(--radius-lg);
+        border: 1px dashed var(--border-color);
+        box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+      }
+
+      @media screen and (max-width: 768px) {
+        .hero-content h1 { font-size: 2.5rem; }
+        .hero-content h2 { font-size: 1.5rem; }
+        .hero-content p { font-size: 1.1rem; }
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Mobile Header Toggle -->
+    <div class="header4" id="header-toggle">
+        <i class="bx bx-menu header__toggle"></i>
+    </div>
+
+    <!-- Mobile Sidebar Nav -->
+    <div class="nav2" id="navbar">
+        <a href="index.html" class="nav2__logo">
+            <img src="img/blm_logo.png" alt="Logo BLM">
+        </a>
+        <div class="nav2__list">
+            <a href="index.html" class="nav2__link active"><i class="bx bx-home nav2__icon"></i> Home</a>
+            <a href="kotakaspirasi.html" class="nav2__link"><i class="bx bx-user nav2__icon"></i> Kotak Aspirasi</a>
+            <a href="faq.html" class="nav2__link"><i class="bx bx-message-rounded nav2__icon"></i> FAQ</a>
+            <a href="bankaspirasi.html" class="nav2__link"><i class="bx bx-file nav2__icon"></i> Bank Aspirasi</a>
+            <a href="selayangpandang.html" class="nav2__link"><i class="bx bx-user nav2__icon"></i> Selayang Pandang</a>
+            
+            <div class="nav2__link" style="cursor: default;">
+                <i class="bx bx-folder nav2__icon"></i> JDIH
+            </div>
+            <div class="nav2__dropdown-content">
+                <a href="jdih-konstitusi.html">Konstitusi</a>
+                <a href="jdih-peraturan-mahasiswa.html">Peraturan Mahasiswa</a>
+                <a href="jdih-peraturan-senat.html">Peraturan Senat Mahasiswa</a>
+                <a href="jdih-sop.html">SOP</a>
+                <a href="jdih-keputusan.html">Keputusan</a>
+                <a href="jdih-rancangan.html">Rancangan Peraturan</a>
+            </div>
+
+            <a href="peminjamanruangan.html" class="nav2__link"><i class="bx bx-time nav2__icon"></i> Peminjaman Ruangan</a>
+            <a href="login.html" class="nav2__link"><i class="bx bx-envelope nav2__icon"></i> Ajukan Surat</a>
+        </div>
+    </div>
+    
+    <!-- Desktop Nav -->
+    <nav>
+        <div class="nav-logo">
+            <img src="img/blm_logo.png" alt="Logo 1">
+            <img src="img/parliament_logo.png" alt="Logo 2">
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="kotakaspirasi.html">Kotak Aspirasi</a></li>
+            <li class="link"><a href="faq.html">FAQ</a></li>
+            <li class="link"><a href="bankaspirasi.html">Bank Aspirasi</a></li>
+            <li class="link"><a href="selayangpandang.html">Selayang Pandang</a></li>
+            <li class="dropdown">
+                <span class="dropbtn">JDIH <i class="bx bx-chevron-down"></i></span>
+                <div class="dropdown-content">
+                    <a href="jdih-konstitusi.html">Konstitusi</a>
+                    <a href="jdih-peraturan-mahasiswa.html">Peraturan Mahasiswa</a>
+                    <a href="jdih-peraturan-senat.html">Peraturan Senat Mahasiswa</a>
+                    <a href="jdih-sop.html">SOP</a>
+                    <a href="jdih-keputusan.html">Keputusan</a>
+                    <a href="jdih-rancangan.html">Rancangan Peraturan</a>
+                </div>
+            </li>
+            <li class="link"><a href="peminjamanruangan.html">Peminjaman Ruangan</a></li>
+            <li><a href="login.html" class="btn">Ajukan Surat</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>BADAN LEGISLATIF MAHASISWA</h1>
+                <h2>FAKULTAS EKONOMI DAN BISNIS<br>UNIVERSITAS AIRLANGGA</h2>
+                <p>Badan Legislatif Mahasiswa yang selanjutnya disebut BLM adalah lembaga legislatif representasi dari mahasiswa di tingkat fakultas yang memiliki fungsi legislasi, pengawasan, dan aspirasi-advokasi.</p>
+                <div class="hero-buttons">
+                    <a href="kotakaspirasi.html" class="btn">Sampaikan Aspirasi</a>
+                    <a href="selayangpandang.html" class="btn btn-outline">Tentang Parlemen BLM</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="welcome-section">
+            <div class="welcome-container">
+                <h3>Selamat Datang di Portal Resmi BLM FEB UNAIR</h3>
+                <p>Kami menyambut Anda di laman resmi Badan Legislatif Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Airlangga. Sebagai ruang representasi mahasiswa, kami hadir untuk menampung partisipasi aktif dalam pengawasan, penyaluran aspirasi, serta advokasi yang sungguh-sungguh berpihak pada kebutuhan mahasiswa FEB UNAIR. BLM FEB UNAIR memegang teguh komitmen untuk terus meningkatkan mutu kinerja di lingkungan fakultas dengan menjunjung tinggi nilai humanis, profesional, dan berwibawa dalam setiap langkah kerja kami. Melalui situs ini, Anda dapat mengakses informasi terbaru seputar program, produk hukum, kegiatan, dan agenda yang kami jalankan. Kami juga mengajak seluruh mahasiswa untuk turut serta dalam setiap kegiatan, serta menyampaikan gagasan dan aspirasi demi kemajuan bersama. Terima kasih atas kunjungan Anda ke portal BLM FEB UNAIR.</p>
+                
+                <div class="tagline">
+                    "Menyatukan Aspirasi, Menegakkan Demokrasi"
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__section">
+                <h3>BLM FEB UNAIR</h3>
+                <p>Badan Legislatif Mahasiswa<br>Fakultas Ekonomi dan Bisnis<br>Universitas Airlangga</p>
+            </div>
+            <div class="footer__section">
+                <h3>Tautan Cepat</h3>
+                <a href="kotakaspirasi.html">Kotak Aspirasi</a>
+                <a href="faq.html">FAQ</a>
+                <a href="bankaspirasi.html">Bank Aspirasi</a>
+                <a href="jdih-konstitusi.html">JDIH</a>
+            </div>
+            <div class="footer__section">
+                <h3>Hubungi Kami</h3>
+                <p>Email: admin@blmfebunair.com</p>
+                <a href="#" style="color:var(--accent-gold); font-weight: 500;"><i class="bx bxl-instagram"></i> Instagram BLM FEB</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 BLM FEB UNAIR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const showMenu = (headerToggle, navbarId) => {
+          const toggleBtn = document.getElementById(headerToggle),
+                nav = document.getElementById(navbarId);
+          if(toggleBtn && nav) {
+            toggleBtn.addEventListener('click', () => {
+              nav.classList.toggle('show-menu');
+            });
+          }
+        }
+        showMenu('header-toggle','navbar');
+    </script>
+</body>
+</html>

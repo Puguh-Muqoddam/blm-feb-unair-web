@@ -1,0 +1,83 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.header {
+  font-family: var(--font-heading);
+  color: var(--primary-navy);
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: -3rem;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.03);
+}
+
+.sub-header {
+  max-width: 650px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 1.15rem;
+}
+
+.jdih-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.jdih-card {
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  border: 1px solid var(--border-color);
+  border-top: 6px solid var(--primary-navy);
+}
+
+.jdih-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--accent-gold);
+}
+
+.jdih-card h4 {
+  color: var(--primary-navy);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.jdih-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.jdih-card .badge {
+  display: inline-block;
+  background: rgba(207, 154, 62, 0.15);
+  color: var(--accent-gold);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--border-color);
+}

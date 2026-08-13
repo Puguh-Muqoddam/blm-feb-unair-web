@@ -354,7 +354,58 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.95rem;
 }
 
-/* Accordion Styles (moved from inline) */
-.accordion { background-color: var(--bg-light); color: var(--primary-navy); cursor: pointer; padding: 18px; width: 100%; border: none; text-align: left; outline: none; font-size: 1.05rem; transition: 0.4s; font-weight: 600; margin-bottom: 2px; border-radius: var(--radius-sm); font-family: var(--font-heading);}
-.active-accordion, .accordion:hover { background-color: var(--border-color); }
-.panel { padding: 0 18px; display: none; background-color: white; overflow: hidden; border: 1px solid var(--border-color); margin-bottom: 15px; border-radius: var(--radius-sm);}
+/* Accordion Styles */
+.accordion { 
+  background-color: var(--bg-white); 
+  color: var(--primary-navy); 
+  cursor: pointer; 
+  padding: 1.25rem 1.5rem; 
+  width: 100%; 
+  border: 1px solid var(--border-color); 
+  text-align: left; 
+  outline: none; 
+  font-size: 1.1rem; 
+  transition: var(--transition); 
+  font-weight: 600; 
+  margin-bottom: 0.5rem; 
+  border-radius: var(--radius-md); 
+  font-family: var(--font-heading);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+.accordion::after {
+  content: '\f078';
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  transition: transform 0.3s ease;
+  color: var(--accent-gold);
+}
+.active-accordion { 
+  background-color: var(--primary-navy); 
+  color: var(--bg-white);
+  border-color: var(--primary-navy);
+}
+.active-accordion::after {
+  transform: rotate(-180deg);
+}
+.accordion:hover { 
+  border-color: var(--accent-gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.panel { 
+  padding: 1.5rem; 
+  display: none; 
+  background-color: var(--bg-white); 
+  overflow: hidden; 
+  border: 1px solid var(--border-color); 
+  margin-bottom: 1.5rem; 
+  border-radius: var(--radius-md);
+  margin-top: -0.5rem;
+  box-shadow: var(--shadow-sm);
+}
+.panel p, .panel ul, .panel ol { margin-bottom: 1rem; color: var(--text-dark); line-height: 1.6; }
+.panel ul, .panel ol { padding-left: 1.5rem; }
+.panel li { margin-bottom: 0.5rem; }

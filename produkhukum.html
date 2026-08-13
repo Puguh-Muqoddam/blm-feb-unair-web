@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRODUK HUKUM - BLM FEB UNAIR</title>
+  <link rel="icon" href="img/blm_logo.png" type="image/x-icon">
+  <!-- CDN Links -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="stylelayout.css">
+  <style>
+    /* Tambahan Gaya untuk Halaman Produk Hukum */
+    .ph-container { max-width: 1200px; margin: 40px auto; padding: 0 20px; font-family: 'Poppins', sans-serif; }
+    .ph-header { text-align: center; margin-bottom: 40px; }
+    .ph-header h1 { color: var(--primary-color, #16215b); margin-bottom: 10px; font-size: 2.5rem; font-weight: 700; }
+    .ph-header p.sub-header { color: var(--accent-gold, #d4af37); font-weight: 600; font-size: 1.2rem; }
+    
+    .ph-intro { background-color: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 40px; line-height: 1.8; color: #444; border-left: 5px solid var(--primary-color, #16215b); font-style: italic; }
+    
+    .ph-section-title { font-size: 1.8rem; color: var(--primary-color, #16215b); margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; font-weight: 700; }
+    
+    .ph-list { list-style: none; padding-left: 0; margin-bottom: 40px; }
+    .ph-list li { margin-bottom: 15px; padding-left: 30px; position: relative; line-height: 1.6; }
+    .ph-list li::before { content: "\eb84"; font-family: 'boxicons'; position: absolute; left: 0; top: 2px; color: var(--accent-gold, #d4af37); font-size: 1.2rem; }
+    .ph-list li strong { color: var(--primary-color, #16215b); font-weight: 600; }
+    
+    .ph-drive-btn { display: inline-flex; align-items: center; gap: 10px; background-color: var(--primary-color, #16215b); color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(22, 33, 91, 0.2); margin: 20px 0 40px; }
+    .ph-drive-btn:hover { background-color: var(--accent-gold, #d4af37); color: var(--primary-color, #16215b); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3); }
+    
+    .ph-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 40px; }
+    .ph-card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 4px solid var(--accent-gold, #d4af37); transition: transform 0.3s ease; display: flex; flex-direction: column; }
+    .ph-card:hover { transform: translateY(-5px); }
+    .ph-card-icon { font-size: 2.5rem; color: var(--primary-color, #16215b); margin-bottom: 15px; }
+    .ph-card h3 { color: var(--primary-color, #16215b); margin-bottom: 10px; font-size: 1.2rem; font-weight: 700; }
+    .ph-card p { color: #666; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px; flex-grow: 1; }
+    .ph-card a { display: inline-flex; align-items: center; gap: 5px; color: var(--accent-gold, #d4af37); font-weight: 600; text-decoration: none; font-size: 0.95rem; transition: color 0.3s ease; }
+    .ph-card a:hover { color: var(--primary-color, #16215b); }
+    
+    .ph-guide { background: #f8fafc; padding: 30px; border-radius: 12px; margin-bottom: 40px; }
+    .ph-guide ol { padding-left: 20px; line-height: 1.8; color: #444; }
+    .ph-guide li { margin-bottom: 10px; }
+    
+    .ph-contact { background: var(--primary-color, #16215b); color: white; padding: 30px; border-radius: 12px; }
+    .ph-contact .ph-section-title { color: var(--accent-gold, #d4af37); border-bottom-color: rgba(255,255,255,0.1); margin-bottom: 25px; }
+    .ph-contact p { margin-bottom: 15px; display: flex; align-items: flex-start; gap: 15px; line-height: 1.6; }
+    .ph-contact i { color: var(--accent-gold, #d4af37); font-size: 1.4rem; margin-top: 3px; }
+    .ph-contact a { color: #cbd5e1; text-decoration: none; transition: color 0.3s ease; }
+    .ph-contact a:hover { color: white; }
+  </style>
+</head>
+<body>
+
+  <!-- Mobile Header Toggle -->
+  <header class="header4" id="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">
+        <img src="img/blm_logo.png" alt="Logo BLM FEB UNAIR" style="width: 40px; margin: 0;">
+      </a>
+      <div class="header__toggle" id="header-toggle">
+        <i class="bx bx-menu" id="header-toggle-icon"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Sidebar Nav -->
+  <div class="nav2" id="navbar">
+    <nav class="nav2__container">
+      <div>
+        <a href="index.html" class="nav2__logo">
+          <img src="img/blm_logo.png" alt="Logo">
+        </a>
+        <div class="nav2__list">
+          <div class="nav2__items">
+            <a href="index.html" class="nav2__link">
+              <i class="bx bx-home nav2__icon"></i>
+              <span class="nav2__name">Home</span>
+            </a>
+            <a href="kotakaspirasi.html" class="nav2__link">
+              <i class="bx bx-user nav2__icon"></i>
+              <span class="nav2__name">Kotak Aspirasi</span>
+            </a>
+            <a href="faq.html" class="nav2__link">
+              <i class="bx bx-message-rounded nav2__icon"></i>
+              <span class="nav2__name">FAQ</span>
+            </a>
+            <a href="bankaspirasi.html" class="nav2__link">
+              <i class="bx bx-file nav2__icon"></i>
+              <span class="nav2__name">Bank Aspirasi</span>
+            </a>
+            <a href="tentang.html" class="nav2__link">
+              <i class="bx bx-user nav2__icon"></i>
+              <span class="nav2__name">Tentang BLM</span>
+            </a>
+            
+            <a href="produkhukum.html" class="nav2__link active">
+              <i class="bx bx-folder nav2__icon"></i>
+              <span class="nav2__name">Produk Hukum</span>
+            </a>
+
+            <a href="peminjamanruangan.html" class="nav2__link">
+              <i class="bx bx-time nav2__icon"></i>
+              <span class="nav2__name">Peminjaman Ruangan</span>
+            </a>
+            <a href="login.html" class="nav2__link">
+              <i class="bx bx-envelope nav2__icon"></i>
+              <span class="nav2__name">Ajukan Surat</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Desktop Nav -->
+  <nav>
+    <div class="nav-logo">
+      <a href="index.html"><img src="img/blm_logo.png" alt="Logo BLM FEB UNAIR"></a>
+      <a href="index.html"><img src="img/parliament_logo.png" alt="Logo Parlemen"></a>
+    </div>
+    <ul class="nav-links">
+      <li class="link"><a href="index.html">Home</a></li>
+      <li class="link"><a href="kotakaspirasi.html">Kotak Aspirasi</a></li>
+      <li class="link"><a href="faq.html">FAQ</a></li>
+      <li class="link"><a href="bankaspirasi.html">Bank Aspirasi</a></li>
+      <li class="link"><a href="tentang.html">Tentang BLM</a></li>
+      <li class="link"><a href="produkhukum.html" class="active" style="color: var(--accent-gold); font-weight: 600;">Produk Hukum</a></li>
+      <li class="link"><a href="peminjamanruangan.html">Peminjaman Ruangan</a></li>
+    </ul>
+    <a href="login.html"><button class="btn btn-ajukansurat">Ajukan Surat</button></a>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="ph-container">
+    <div class="ph-header">
+      <h1>PRODUK HUKUM BLM FEB UNAIR</h1>
+      <p class="sub-header">"Pusat Produk Hukum BLM FEB UNAIR"</p>
+    </div>
+
+    <div class="ph-intro">
+      Pusat Produk Hukum BLM FEB UNAIR adalah dokumentasi dan informasi hukum yang dikelola oleh Badan Legislatif Mahasiswa Fakultas Ekonomi dan Bisnis Universitas Airlangga. Halaman ini menyediakan akses terhadap berbagai produk hukum yang dihasilkan oleh BLM FEB UNAIR, termasuk Ketetapan (TAP) BLM, Surat Keputusan (SK), dan peraturan lainnya yang mengikat BLM FEB UNAIR secara internal dan secara eksternal Organisasi Kemahasiswaan (Ormawa) di lingkungan FEB UNAIR.
+    </div>
+
+    <h2 class="ph-section-title">Produk Hukum yang Terdokumentasi</h2>
+    <ul class="ph-list">
+      <li><strong>Ketetapan (TAP) BLM</strong> — kebijakan strategis yang mengatur pelaksanaan kegiatan kemahasiswaan</li>
+      <li><strong>Surat Keputusan (SK) BLM</strong> — keputusan administratif terkait keanggotaan, pengesahan, atau pemberian sanksi</li>
+      <li><strong>Undang-Undang</strong> — aturan yang mengikat seluruh mahasiswa di lingkungan FEB UNAIR</li>
+      <li><strong>Surat Laporan</strong> — laporan pelanggaran dan rekomendasi sanksi</li>
+    </ul>
+
+    <h2 class="ph-section-title">Akses Dokumen</h2>
+    
+    <h3 style="color: #444; font-size: 1.2rem; margin-bottom: 10px;">A. Google Drive — Kumpulan Dokumen Hukum BLM FEB UNAIR</h3>
+    <p style="color: #666; margin-bottom: 10px;">Seluruh produk hukum BLM FEB UNAIR dapat diakses melalui tautan Google Drive di bawah ini:</p>
+    <a href="https://drive.google.com/drive/folders/1f4iTq6ABdHVRXfEVd6fAZRfLmiWdeH2U?usp=sharing" target="_blank" class="ph-drive-btn"><i class='bx bxl-google'></i> Buka Direktori Google Drive</a>
+
+    <h3 style="color: #444; font-size: 1.2rem; margin-top: 20px; margin-bottom: 20px;">B. Dokumen Berdasarkan Kategori</h3>
+    <div class="ph-grid">
+      <div class="ph-card">
+        <i class='bx bx-book-bookmark ph-card-icon'></i>
+        <h3>Ketetapan (TAP) BLM</h3>
+        <p>Seluruh Ketetapan BLM FEB UNAIR</p>
+        <a href="https://drive.google.com/drive/folders/1f4iTq6ABdHVRXfEVd6fAZRfLmiWdeH2U?usp=sharing" target="_blank">Lihat Dokumen <i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+      <div class="ph-card">
+        <i class='bx bx-check-shield ph-card-icon'></i>
+        <h3>Surat Keputusan (SK) BLM</h3>
+        <p>Seluruh SK BLM FEB UNAIR</p>
+        <a href="https://drive.google.com/drive/folders/1f4iTq6ABdHVRXfEVd6fAZRfLmiWdeH2U?usp=sharing" target="_blank">Lihat Dokumen <i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+      <div class="ph-card">
+        <i class='bx bx-scale ph-card-icon'></i>
+        <h3>Undang-Undang</h3>
+        <p>Seluruh Peraturan Mahasiswa FEB UNAIR</p>
+        <a href="https://drive.google.com/drive/folders/1f4iTq6ABdHVRXfEVd6fAZRfLmiWdeH2U?usp=sharing" target="_blank">Lihat Dokumen <i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+      <div class="ph-card">
+        <i class='bx bx-file ph-card-icon'></i>
+        <h3>Berita Acara Sidang</h3>
+        <p>Dokumentasi sidang pleno BLM</p>
+        <a href="https://drive.google.com/drive/folders/1f4iTq6ABdHVRXfEVd6fAZRfLmiWdeH2U?usp=sharing" target="_blank">Lihat Dokumen <i class='bx bx-right-arrow-alt'></i></a>
+      </div>
+    </div>
+
+    <div class="ph-guide">
+      <h2 class="ph-section-title" style="border-color: #ddd;">Cara Mengakses Dokumen</h2>
+      <ol>
+        <li>Klik tautan Google Drive pada kategori yang diinginkan</li>
+        <li>Pengunjung dapat melihat dan mengunduh dokumen (akses <em>view-only</em> agar dokumen tidak dapat diedit)</li>
+        <li>Dokumen disusun berdasarkan tahun dan jenis produk hukum</li>
+      </ol>
+    </div>
+
+    <div class="ph-contact">
+      <h2 class="ph-section-title">Kontak dan Informasi</h2>
+      <p><i class='bx bx-envelope'></i> <span>Email: <a href="mailto:blmfebunair2026@gmail.com">blmfebunair2026@gmail.com</a></span></p>
+      <p><i class='bx bx-map'></i> <span>Sekretariat: Graha Krida Mahasiswa (GKM) Lantai 1, Fakultas Ekonomi dan Bisnis Universitas Airlangga</span></p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="footer__container">
+          <div class="footer__section">
+              <h3>BLM FEB UNAIR</h3>
+              <p>Badan Legislatif Mahasiswa<br>Fakultas Ekonomi dan Bisnis<br>Universitas Airlangga</p>
+          </div>
+          <div class="footer__section">
+              <h3>Tautan Cepat</h3>
+              <a href="kotakaspirasi.html">Kotak Aspirasi</a>
+              <a href="faq.html">FAQ</a>
+              <a href="bankaspirasi.html">Bank Aspirasi</a>
+              <a href="produkhukum.html">Produk Hukum</a>
+          </div>
+          <div class="footer__section">
+              <h3>Hubungi Kami</h3>
+              <p>Email: <a href="mailto:blmfebunair2026@gmail.com" style="color: #cbd5e1;">blmfebunair2026@gmail.com</a></p>
+              <a href="https://www.instagram.com/blmfebunair?igsi=ZDNlZDc0MzIxNw==" target="_blank" style="color:var(--accent-gold); font-weight: 500;"><i class="bx bxl-instagram"></i> Instagram BLM FEB</a>
+          </div>
+      </div>
+      <div class="footer__bottom">
+          <p>&copy; 2026 BLM FEB UNAIR. All rights reserved.</p>
+      </div>
+  </footer>
+
+  <!-- Sidebar Toggle Script -->
+  <script>
+    const showMenu = (headerToggle, navId) => {
+      const toggleBtn = document.getElementById(headerToggle),
+            nav = document.getElementById(navId);
+      if (toggleBtn && nav) {
+        toggleBtn.addEventListener('click', () => {
+          nav.classList.toggle('show-menu');
+        });
+      }
+    };
+    showMenu('header-toggle', 'navbar');
+  </script>
+
+</body>
+</html>

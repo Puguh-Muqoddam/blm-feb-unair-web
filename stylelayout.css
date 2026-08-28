@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap");
 
 :root {
   /* BLM Color Palette */
@@ -59,7 +59,8 @@ nav {
   padding: 1rem 4rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+    gap: 2rem;
   background-color: var(--bg-white);
   box-shadow: var(--shadow-sm);
   position: sticky;
@@ -68,9 +69,10 @@ nav {
 }
 
 .nav-logo {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: auto;
 }
 
 .nav-logo img {
@@ -371,7 +373,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: var(--radius-md); 
   font-family: var(--font-heading);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+    gap: 2rem;
   align-items: center;
   box-shadow: var(--shadow-sm);
 }
@@ -409,3 +412,4 @@ h1, h2, h3, h4, h5, h6 {
 .panel p, .panel ul, .panel ol { margin-bottom: 1rem; color: var(--text-dark); line-height: 1.6; }
 .panel ul, .panel ol { padding-left: 1.5rem; }
 .panel li { margin-bottom: 0.5rem; }
+
